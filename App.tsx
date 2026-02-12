@@ -61,7 +61,7 @@ function App() {
   }
 
   return (
-    <div className="flex h-screen bg-gray-50 dark:bg-slate-950 font-sans text-gray-900 dark:text-gray-100 overflow-hidden animate-in fade-in duration-700">
+    <div className="flex h-screen bg-slate-50 dark:bg-slate-950 font-sans text-slate-900 dark:text-slate-200 overflow-hidden animate-in fade-in duration-700">
       <Sidebar 
         currentView={currentView} 
         onChangeView={setCurrentView} 

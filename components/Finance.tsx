@@ -18,11 +18,11 @@ export const Finance: React.FC = () => {
     <div className="space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500">
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Financial Overview</h2>
-          <p className="text-gray-500 dark:text-slate-400">Monitor cash flow, expenses, and invoices.</p>
+          <h2 className="text-2xl font-bold text-slate-900 dark:text-white">Financial Overview</h2>
+          <p className="text-slate-500 dark:text-slate-400">Monitor cash flow, expenses, and invoices.</p>
         </div>
         <div className="flex gap-2">
-            <button className="px-4 py-2 bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 rounded-lg text-sm font-medium text-gray-700 dark:text-slate-300 hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors flex items-center gap-2">
+            <button className="px-4 py-2 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg text-sm font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors flex items-center gap-2">
                 <Download className="w-4 h-4" />
                 Export
             </button>
@@ -34,10 +34,10 @@ export const Finance: React.FC = () => {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-          <div className="lg:col-span-2 bg-white dark:bg-slate-900 p-6 rounded-xl border border-gray-200 dark:border-slate-800 shadow-sm">
+          <div className="lg:col-span-2 bg-white dark:bg-slate-900 p-6 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
              <div className="flex items-center justify-between mb-6">
-                <h3 className="font-semibold text-gray-900 dark:text-white">Cash Flow</h3>
-                <select className="bg-gray-50 dark:bg-slate-800 border border-gray-200 dark:border-slate-700 rounded-md text-xs px-2 py-1 text-gray-600 dark:text-slate-300 outline-none">
+                <h3 className="font-semibold text-slate-900 dark:text-white">Cash Flow</h3>
+                <select className="bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-md text-xs px-2 py-1 text-slate-600 dark:text-slate-300 outline-none">
                     <option>Last 7 Days</option>
                     <option>Last 30 Days</option>
                     <option>This Year</option>
@@ -70,27 +70,27 @@ export const Finance: React.FC = () => {
           </div>
 
           <div className="space-y-6">
-              <div className="bg-white dark:bg-slate-900 p-6 rounded-xl border border-gray-200 dark:border-slate-800 shadow-sm">
+              <div className="bg-white dark:bg-slate-900 p-6 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
                   <div className="flex items-center gap-3 mb-2">
                       <div className="p-2 bg-emerald-100 dark:bg-emerald-900/30 rounded-lg text-emerald-600 dark:text-emerald-400">
                           <ArrowUpRight className="w-5 h-5" />
                       </div>
-                      <span className="text-sm font-medium text-gray-500 dark:text-slate-400">Total Income</span>
+                      <span className="text-sm font-medium text-slate-500 dark:text-slate-400">Total Income</span>
                   </div>
-                  <div className="text-2xl font-bold text-gray-900 dark:text-white">$124,500.00</div>
+                  <div className="text-2xl font-bold text-slate-900 dark:text-white">$124,500.00</div>
                   <div className="text-xs text-emerald-600 mt-1 flex items-center gap-1">
                       <ArrowUpRight className="w-3 h-3" /> +12% from last month
                   </div>
               </div>
               
-              <div className="bg-white dark:bg-slate-900 p-6 rounded-xl border border-gray-200 dark:border-slate-800 shadow-sm">
+              <div className="bg-white dark:bg-slate-900 p-6 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
                   <div className="flex items-center gap-3 mb-2">
                       <div className="p-2 bg-rose-100 dark:bg-rose-900/30 rounded-lg text-rose-600 dark:text-rose-400">
                           <ArrowDownRight className="w-5 h-5" />
                       </div>
-                      <span className="text-sm font-medium text-gray-500 dark:text-slate-400">Total Expenses</span>
+                      <span className="text-sm font-medium text-slate-500 dark:text-slate-400">Total Expenses</span>
                   </div>
-                  <div className="text-2xl font-bold text-gray-900 dark:text-white">$42,300.00</div>
+                  <div className="text-2xl font-bold text-slate-900 dark:text-white">$42,300.00</div>
                   <div className="text-xs text-rose-600 mt-1 flex items-center gap-1">
                       <ArrowUpRight className="w-3 h-3" /> +5% from last month
                   </div>
@@ -98,38 +98,38 @@ export const Finance: React.FC = () => {
           </div>
       </div>
 
-      <div className="bg-white dark:bg-slate-900 rounded-xl border border-gray-200 dark:border-slate-800 shadow-sm overflow-hidden">
-        <div className="px-6 py-4 border-b border-gray-100 dark:border-slate-800 flex justify-between items-center">
-             <h3 className="font-semibold text-gray-900 dark:text-white">Recent Transactions</h3>
-             <button className="text-gray-400 hover:text-gray-600 dark:hover:text-slate-200 p-1">
+      <div className="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden">
+        <div className="px-6 py-4 border-b border-slate-100 dark:border-slate-800 flex justify-between items-center">
+             <h3 className="font-semibold text-slate-900 dark:text-white">Recent Transactions</h3>
+             <button className="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 p-1">
                  <Filter className="w-4 h-4" />
              </button>
         </div>
         <div className="overflow-x-auto">
             <table className="w-full text-left text-sm">
-                <thead className="bg-gray-50 dark:bg-slate-950/50">
+                <thead className="bg-slate-50 dark:bg-slate-950/50">
                     <tr>
-                        <th className="px-6 py-3 font-medium text-gray-500 dark:text-slate-400">Description</th>
-                        <th className="px-6 py-3 font-medium text-gray-500 dark:text-slate-400">Date</th>
-                        <th className="px-6 py-3 font-medium text-gray-500 dark:text-slate-400">Status</th>
-                        <th className="px-6 py-3 font-medium text-gray-500 dark:text-slate-400 text-right">Amount</th>
+                        <th className="px-6 py-3 font-medium text-slate-500 dark:text-slate-400">Description</th>
+                        <th className="px-6 py-3 font-medium text-slate-500 dark:text-slate-400">Date</th>
+                        <th className="px-6 py-3 font-medium text-slate-500 dark:text-slate-400">Status</th>
+                        <th className="px-6 py-3 font-medium text-slate-500 dark:text-slate-400 text-right">Amount</th>
                     </tr>
                 </thead>
-                <tbody className="divide-y divide-gray-100 dark:divide-slate-800">
+                <tbody className="divide-y divide-slate-100 dark:divide-slate-800">
                     {TRANSACTIONS.map((t) => (
-                        <tr key={t.id} className="hover:bg-gray-50 dark:hover:bg-slate-800/50 transition-colors">
-                            <td className="px-6 py-4 text-gray-900 dark:text-white font-medium">{t.description}</td>
-                            <td className="px-6 py-4 text-gray-500 dark:text-slate-400">{t.date}</td>
+                        <tr key={t.id} className="hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors">
+                            <td className="px-6 py-4 text-slate-900 dark:text-white font-medium">{t.description}</td>
+                            <td className="px-6 py-4 text-slate-500 dark:text-slate-400">{t.date}</td>
                             <td className="px-6 py-4">
                                 <span className={`px-2 py-0.5 rounded-full text-xs font-medium ${
                                     t.status === 'Paid' ? 'bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400' :
                                     t.status === 'Pending' ? 'bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400' :
-                                    'bg-gray-100 text-gray-600'
+                                    'bg-slate-100 text-slate-600'
                                 }`}>
                                     {t.status}
                                 </span>
                             </td>
-                            <td className={`px-6 py-4 text-right font-medium ${t.type === 'income' ? 'text-emerald-600 dark:text-emerald-400' : 'text-gray-900 dark:text-white'}`}>
+                            <td className={`px-6 py-4 text-right font-medium ${t.type === 'income' ? 'text-emerald-600 dark:text-emerald-400' : 'text-slate-900 dark:text-white'}`}>
                                 {t.type === 'income' ? '+' : '-'}${t.amount.toLocaleString()}
                             </td>
                         </tr>

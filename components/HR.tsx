@@ -13,8 +13,8 @@ export const HR: React.FC = () => {
     <div className="space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500">
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white">People & Teams</h2>
-          <p className="text-gray-500 dark:text-slate-400">Manage directory, attendance, and performance.</p>
+          <h2 className="text-2xl font-bold text-slate-900 dark:text-white">People & Teams</h2>
+          <p className="text-slate-500 dark:text-slate-400">Manage directory, attendance, and performance.</p>
         </div>
         <button className="flex items-center gap-2 px-4 py-2 bg-nexus-600 hover:bg-nexus-700 text-white rounded-lg text-sm font-medium transition-colors shadow-sm shadow-nexus-200 dark:shadow-none">
              <UserPlus className="w-4 h-4" />
@@ -23,62 +23,62 @@ export const HR: React.FC = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div className="bg-white dark:bg-slate-900 p-6 rounded-xl border border-gray-200 dark:border-slate-800 shadow-sm flex items-center gap-4">
+        <div className="bg-white dark:bg-slate-900 p-6 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm flex items-center gap-4">
             <div className="p-3 bg-nexus-100 dark:bg-nexus-900/30 text-nexus-600 rounded-lg">
                 <Users className="w-6 h-6" />
             </div>
             <div>
-                <div className="text-2xl font-bold text-gray-900 dark:text-white">42</div>
-                <div className="text-sm text-gray-500 dark:text-slate-400">Total Employees</div>
+                <div className="text-2xl font-bold text-slate-900 dark:text-white">42</div>
+                <div className="text-sm text-slate-500 dark:text-slate-400">Total Employees</div>
             </div>
         </div>
-        <div className="bg-white dark:bg-slate-900 p-6 rounded-xl border border-gray-200 dark:border-slate-800 shadow-sm flex items-center gap-4">
+        <div className="bg-white dark:bg-slate-900 p-6 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm flex items-center gap-4">
             <div className="p-3 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 rounded-lg">
                 <Clock className="w-6 h-6" />
             </div>
             <div>
-                <div className="text-2xl font-bold text-gray-900 dark:text-white">96%</div>
-                <div className="text-sm text-gray-500 dark:text-slate-400">On-Time Attendance</div>
+                <div className="text-2xl font-bold text-slate-900 dark:text-white">96%</div>
+                <div className="text-sm text-slate-500 dark:text-slate-400">On-Time Attendance</div>
             </div>
         </div>
-        <div className="bg-white dark:bg-slate-900 p-6 rounded-xl border border-gray-200 dark:border-slate-800 shadow-sm flex items-center gap-4">
+        <div className="bg-white dark:bg-slate-900 p-6 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm flex items-center gap-4">
             <div className="p-3 bg-amber-100 dark:bg-amber-900/30 text-amber-600 rounded-lg">
                 <Award className="w-6 h-6" />
             </div>
             <div>
-                <div className="text-2xl font-bold text-gray-900 dark:text-white">4.8</div>
-                <div className="text-sm text-gray-500 dark:text-slate-400">Avg Performance Score</div>
+                <div className="text-2xl font-bold text-slate-900 dark:text-white">4.8</div>
+                <div className="text-sm text-slate-500 dark:text-slate-400">Avg Performance Score</div>
             </div>
         </div>
       </div>
 
-      <div className="bg-white dark:bg-slate-900 rounded-xl border border-gray-200 dark:border-slate-800 shadow-sm overflow-hidden">
+      <div className="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden">
         <table className="w-full text-left text-sm">
-            <thead className="bg-gray-50 dark:bg-slate-950 border-b border-gray-200 dark:border-slate-800">
+            <thead className="bg-slate-50 dark:bg-slate-950 border-b border-slate-200 dark:border-slate-800">
                 <tr>
-                    <th className="px-6 py-4 font-semibold text-gray-900 dark:text-white">Employee</th>
-                    <th className="px-6 py-4 font-semibold text-gray-900 dark:text-white">Role</th>
-                    <th className="px-6 py-4 font-semibold text-gray-900 dark:text-white">Department</th>
-                    <th className="px-6 py-4 font-semibold text-gray-900 dark:text-white">Status</th>
-                    <th className="px-6 py-4 font-semibold text-gray-900 dark:text-white">Performance</th>
-                    <th className="px-6 py-4 text-right font-semibold text-gray-900 dark:text-white">Actions</th>
+                    <th className="px-6 py-4 font-semibold text-slate-900 dark:text-white">Employee</th>
+                    <th className="px-6 py-4 font-semibold text-slate-900 dark:text-white">Role</th>
+                    <th className="px-6 py-4 font-semibold text-slate-900 dark:text-white">Department</th>
+                    <th className="px-6 py-4 font-semibold text-slate-900 dark:text-white">Status</th>
+                    <th className="px-6 py-4 font-semibold text-slate-900 dark:text-white">Performance</th>
+                    <th className="px-6 py-4 text-right font-semibold text-slate-900 dark:text-white">Actions</th>
                 </tr>
             </thead>
-            <tbody className="divide-y divide-gray-100 dark:divide-slate-800">
+            <tbody className="divide-y divide-slate-100 dark:divide-slate-800">
                 {EMPLOYEES.map((emp) => (
-                    <tr key={emp.id} className="hover:bg-gray-50 dark:hover:bg-slate-800/50 transition-colors">
+                    <tr key={emp.id} className="hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors">
                         <td className="px-6 py-4">
                             <div className="flex items-center gap-3">
-                                <img src={emp.avatar} alt={emp.name} className="w-9 h-9 rounded-full border border-gray-200 dark:border-slate-700" />
+                                <img src={emp.avatar} alt={emp.name} className="w-9 h-9 rounded-full border border-slate-200 dark:border-slate-700" />
                                 <div>
-                                    <div className="font-medium text-gray-900 dark:text-white">{emp.name}</div>
-                                    <div className="text-xs text-gray-500 dark:text-slate-400">ID: #{1000 + emp.id}</div>
+                                    <div className="font-medium text-slate-900 dark:text-white">{emp.name}</div>
+                                    <div className="text-xs text-slate-500 dark:text-slate-400">ID: #{1000 + emp.id}</div>
                                 </div>
                             </div>
                         </td>
-                        <td className="px-6 py-4 text-gray-600 dark:text-slate-400">{emp.role}</td>
+                        <td className="px-6 py-4 text-slate-600 dark:text-slate-400">{emp.role}</td>
                         <td className="px-6 py-4">
-                            <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-800 dark:bg-slate-800 dark:text-slate-300">
+                            <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-slate-100 text-slate-800 dark:bg-slate-800 dark:text-slate-300">
                                 {emp.dept}
                             </span>
                         </td>
@@ -96,14 +96,14 @@ export const HR: React.FC = () => {
                         </td>
                         <td className="px-6 py-4">
                             <div className="flex items-center gap-2">
-                                <div className="w-16 h-1.5 bg-gray-100 dark:bg-slate-800 rounded-full overflow-hidden">
+                                <div className="w-16 h-1.5 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
                                     <div className="h-full bg-nexus-500" style={{ width: `${emp.performance}%` }}></div>
                                 </div>
-                                <span className="text-xs font-medium text-gray-700 dark:text-slate-300">{emp.performance}%</span>
+                                <span className="text-xs font-medium text-slate-700 dark:text-slate-300">{emp.performance}%</span>
                             </div>
                         </td>
                         <td className="px-6 py-4 text-right">
-                             <button className="text-gray-400 hover:text-gray-600 dark:hover:text-slate-200">
+                             <button className="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200">
                                 <MoreHorizontal className="w-4 h-4" />
                             </button>
                         </td>
