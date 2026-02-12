@@ -2,7 +2,9 @@ import { GoogleGenAI } from "@google/genai";
 
 export const fetchBusinessInsights = async (metrics: any) => {
   try {
-    const apiKey = process.env.API_KEY;
+    // Safely check for process.env to avoid ReferenceError in browser environments
+    const apiKey = (typeof process !== 'undefined' && process.env) ? process.env.API_KEY : '';
+    
     if (!apiKey) {
       console.warn("No API Key found for Gemini");
       return "AI Insights require an API Key. Please configure it to see predictions.";
